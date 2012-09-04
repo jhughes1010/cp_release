@@ -1,8 +1,8 @@
 # Project to parse MEMP and ACP 'released program' files
 # 1. Report released programs for each device-tab
 # 2. Ensure ACP and MEMP release tables are in sync
-require "device"
-require "probe"
+require_relative "device"
+require_relative "probe"
 
 
 puts "-----Devices-----"
