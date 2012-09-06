@@ -14,7 +14,7 @@ class Device
     @data = IO.readlines("devices/#{@filename}")
   end
   def device_names
-    puts @data
+    @data
   end
 
 end
