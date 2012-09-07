@@ -35,7 +35,12 @@ spi_devices = spi.device_names
 #puts three_wire.device_names
 #
 spi_devices.each do |d|
-  puts d
+  #puts
+  d.chomp!
+  puts "\nDevice #{d} at #{memp.title}"
   memp.program_names(d)
+  #puts
+  puts "\nDevice #{d} at #{acp.title}"
   acp.program_names(d)
+  puts "\n\n\n\n"
 end

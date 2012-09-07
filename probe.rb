@@ -1,4 +1,5 @@
 class Probe
+  attr_reader :title
   def initialize(title, filename)
     puts "Created #{title} Class"
     @title = title
